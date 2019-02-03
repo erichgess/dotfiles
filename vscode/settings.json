@@ -1,0 +1,52 @@
+{
+    "telemetry.enableTelemetry": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "workbench.colorTheme": "City Lights",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "files.eol": "\n",
+    "files.useExperimentalFileWatcher": true,
+    "breadcrumbs.enabled": true,
+    "telemetry.enableCrashReporter": false,
+    "go.autocompleteUnimportedPackages": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "g", "d"],
+            "commands": [
+                {
+                    "command": "editor.action.goToDeclaration"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "g", "i"],
+            "commands": [
+                {
+                    "command": "editor.action.goToImplementation"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "p", "r"],
+            "commands": [
+                {
+                    "command": "editor.action.referenceSearch.trigger"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "p", "i"],
+            "commands": [
+                {
+                    "command": "editor.action.peekImplementation"
+                }
+            ]
+        }
+    ],
+    "graphvizPreview.engine": "dot",
+    "graphvizPreview.dotPath": "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe"
+}
