@@ -1,5 +1,6 @@
 {
     "telemetry.enableTelemetry": false,
+    "vim.leader": " ",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
@@ -47,6 +48,14 @@
             ]
         }
     ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
     "graphvizPreview.engine": "dot",
-    "graphvizPreview.dotPath": "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe"
+    "graphvizPreview.dotPath": "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe",
+    "go.docsTool": "gogetdoc",
+    "go.useLanguageServer": true,
 }
