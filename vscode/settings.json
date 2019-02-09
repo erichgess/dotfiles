@@ -46,6 +46,14 @@
                     "command": "editor.action.peekImplementation"
                 }
             ]
+        },
+        {
+            "before": ["<leader>", "r"],
+            "commands": [
+                {
+                    "command": "editor.action.rename"
+                }
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -58,4 +66,5 @@
     "graphvizPreview.dotPath": "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe",
     "go.docsTool": "gogetdoc",
     "go.useLanguageServer": true,
+    "editor.fontSize": 12,
 }
