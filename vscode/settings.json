@@ -1,38 +1,13 @@
 {
-    "telemetry.enableTelemetry": false,
-    "vim.leader": " ",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
             "after": ["<Esc>"]
         }
     ],
-    "workbench.colorTheme": "City Lights",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-    "files.eol": "\n",
-    "files.useExperimentalFileWatcher": true,
-    "breadcrumbs.enabled": true,
-    "telemetry.enableCrashReporter": false,
-    "go.autocompleteUnimportedPackages": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>", "g", "d"],
-            "commands": [
-                {
-                    "command": "editor.action.goToDeclaration"
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "g", "i"],
-            "commands": [
-                {
-                    "command": "editor.action.goToImplementation"
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "p", "r"],
+            "before": ["?"],
             "commands": [
                 {
                     "command": "editor.action.referenceSearch.trigger"
@@ -40,31 +15,32 @@
             ]
         },
         {
-            "before": ["<leader>", "p", "i"],
+            "before": ["J"],
             "commands": [
                 {
-                    "command": "editor.action.peekImplementation"
+                    "command": "workbench.action.navigateBack"
                 }
             ]
         },
         {
-            "before": ["<leader>", "r"],
+            "before": ["K"],
             "commands": [
                 {
-                    "command": "editor.action.rename"
+                    "command": "workbench.action.navigateForward"
                 }
             ]
         }
     ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": ["<leader>", "j", "k"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "graphvizPreview.engine": "dot",
-    "graphvizPreview.dotPath": "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe",
-    "go.docsTool": "gogetdoc",
-    "go.useLanguageServer": true,
-    "editor.fontSize": 12,
+    "git.autofetch": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "window.title": "${dirty}${separator}${activeEditorShort}${separator}${activeEditorLong}",
+    "breadcrumbs.enabled": true,
+    "terminal.integrated.rendererType": "dom",
+    "workbench.colorTheme": "Night Owl",
+    "window.zoomLevel": 0,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "git.enableSmartCommit": true,
+    "workbench.sideBar.location": "right"
 }
