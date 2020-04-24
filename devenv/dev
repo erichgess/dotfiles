@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Clear all other panes
+tmux kill-pane -a
+
+tmux split-window -h
+tmux split-window -v
+
+tmux select-pane -t 0
+tmux send-keys -t 0 "vim $1" Enter
+
+if [ -z "$2" ]
+then 
+    tmux send-keys -t 1 "cargo watch -c -i log -x \"run\"" Enter
+else
+    tmux send-keys -t 1 "cargo watch -c -i log -x \"run -- $2\"" Enter
+fi
+
+project=${PWD##*/}
+tmux send-keys -t 2 "task list project:$project" Enter

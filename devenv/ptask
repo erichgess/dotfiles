@@ -1,0 +1,14 @@
+#!/bin/bash
+
+project=${PROJECT}
+if [ -z "${PROJECT}" ]
+then
+    project=${PWD##*/}
+fi
+
+if [ -z "$1" ]
+then
+    task list project:$project
+else
+    task project:$project $@
+fi
